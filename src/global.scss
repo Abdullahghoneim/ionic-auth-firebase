@@ -9,3 +9,19 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+*{
+    font-family: ECocon
+}
+
+@font-face { 
+    font-family: ECocon; 
+    src: url(./assets/Fonts/Cocon-Regular.ttf);
+}
+
+input::-webkit-input-placeholder{
+    padding-left: 1.1rem ; 
+}
+input {
+    margin-left: 3rem;
+}

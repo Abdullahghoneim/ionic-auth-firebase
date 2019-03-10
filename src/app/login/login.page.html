@@ -1,0 +1,25 @@
+<ion-content padding>
+  <div class="login-contant">
+    <div class="logo" text-center>
+      <p color="primary" padding text-center>Logo</p>
+    </div>
+    <form #f="ngForm" padding novalidate>
+        <ion-label class="input-label " margin-top > Email  </ion-label>
+          <span>
+            <ion-icon class="i" name="contact"></ion-icon>
+            <ion-input name="password" [(ngModel)]="user.email" placeholder="Email" class="login-input" id="email" name="userEmail"   required></ion-input>
+          </span>
+        <ion-label class="input-label " margin-top  >Password</ion-label>
+          <span>
+            <ion-icon class="i" name="lock"></ion-icon>
+            <ion-input placeholder="Password" [(ngModel)]="user.password" name="userPassword" class="login-input" type="password" id="userPassword"  required minlength="6"></ion-input>
+          </span>
+      <ion-button  expand="full" text-center shape="round" margin-top strong >Login</ion-button>
+    </form>
+    <div class="button-link" text-center>
+      <a href="#" text-center>
+        About US
+      </a>
+    </div>
+  </div>
+</ion-content>
