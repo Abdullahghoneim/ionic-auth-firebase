@@ -1,9 +1,7 @@
 <ion-content padding>
   <div class="login-contant">
-    <div class="logo" text-center>
-      <p color="primary" padding>Occasion ToDay </p>
-    </div>
-    <form #f="ngForm" (ngSubmit)="loginSubmit()" padding novalidate>
+    <h1 color="primary" text-center>Create New Account </h1>
+    <form #f="ngForm" (ngSubmit)="signupSubmit()" padding novalidate>
       <ion-label class="input-label " margin-top> Email </ion-label>
       <span>
         <ion-icon class="i" name="contact"></ion-icon>
@@ -16,10 +14,10 @@
         <ion-input placeholder="Password" [(ngModel)]="user.password" name="userPassword" class="login-input"
           type="password" id="userPassword" required minlength="6"></ion-input>
       </span>
-      <ion-button type="submit" expand="full" text-center shape="round" margin-top strong>Login </ion-button>
+      <ion-button type="submit" expand="full" text-center shape="round" margin-top strong>sign up </ion-button>
     </form>
   </div>
   <div text-center>
-    <a href="#" [routerLink]="['/signup']" color="primary"> create new account </a>
+    <a href="#" [routerLink]="['/login']" color="primary"> login </a>
   </div>
 </ion-content>
