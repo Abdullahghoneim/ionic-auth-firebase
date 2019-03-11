@@ -9,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms'
+import { AuthService } from './services/auth.service';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -16,6 +17,7 @@ import {FormsModule} from '@angular/forms'
   providers: [
     StatusBar,
     SplashScreen,
+    AuthService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
